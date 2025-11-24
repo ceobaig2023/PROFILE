@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirza Mohammed Baig | Developer Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(180deg, #0a1e3f, #001122);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* RAINING ICONS */
+    .icon {
+      position: fixed;
+      top: -50px;
+      color: #4da6ff;
+      font-size: 24px;
+      animation: fall 6s linear infinite;
+      opacity: 0.7;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(-50px); }
+      100% { transform: translateY(120vh); }
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 45px;
+      font-weight: 700;
+      color: #4da6ff;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .section {
+      background: rgba(255, 255, 255, 0.05);
+      margin: 30px auto;
+      width: 90%;
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .section h2 {
+      color: #4da6ff;
+      font-size: 28px;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .skills-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .skills-icons img {
+      width: 50px;
+      height: 50px;
+      filter: drop-shadow(0 0 5px #4da6ff);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- RAIN ICONS JS GENERATED -->
+  <script>
+    const icons = ['💻','⚙️','☁️','📘','🧠','🧩','📡','🔧'];
+    for (let i = 0; i < 40; i++) {
+      let icon = document.createElement("div");
+      icon.classList.add("icon");
+      icon.innerText = icons[Math.floor(Math.random() * icons.length)];
+      icon.style.left = Math.random() * 100 + "vw";
+      icon.style.animationDuration = (Math.random() * 3 + 3) + "s";
+      document.body.appendChild(icon);
+    }
+  </script>
+
+  <header>
+    <h1>MIRZA MOHAMMED BAIG</h1>
+    <p>Software Engineer | Backend Developer | GenAI Engineer</p>
+    <p>📞 +91 9703245112 | 📧 mirzamdbaig35@gmail.com</p>
+    <p><a href="https://www.linkedin.com/in/mirza-ai/" style="color:#4da6ff">LinkedIn</a> | <a href="https://github.com/ceobaig2023" style="color:#4da6ff">GitHub</a></p>
+  </header>
+
+
+  <div class="section">
+    <h2>Professional Summary</h2>
+    <p>
+      Software Engineer with 2+ years of experience in backend development, 
+      microservices, cloud engineering, and Generative AI. Specialized in Java,Python,Spring Boot, WebFlux, R2DBC, FastAPI, and LLM-based applications.
+      Skilled in building scalable systems, automation workflows, and cloud deployments.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li><b>Programming:</b> Python, Java 8+</li>
+      <li><b>Frameworks:</b> Spring Boot, WebFlux,R2DBC, FastAPI, Spring Security</li>
+      <li><b>Databases:</b> MySQL, MongoDB, VectorDB (Astra, Pinecone)</li>
+      <li><b>Cloud:</b> AWS (EC2, Lambda, S3, IAM, VPC, CodePipeline), Azure (ADF, Data Lake)</li>
+      <li><b>DevOps:</b> GitLab CI/CD, GitHub Actions, Linux</li>
+      <li><b>GenAI:</b> RAG, Hugging Face, LLMs, Power BI, Prophet</li>
+      <li><b>Agentic AI Tools:</b> n8n, LangChain Agents, Autogen</li>
+      <li><b>Tools:</b> Git, Maven, Gradle, Postman, Swagger</li>
+    </ul>
+
+    <!-- ICONS ROW -->
+    <div class="skills-icons">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Experience</h2>
+    <ul>
+      <li><b>Nisum Consulting Pvt Ltd | Software Engineer (Sep 2023 – Present)</b></li>
+      <li>Built microservices using Java 21, WebFlux, R2DBC, MS SQL</li>
+      <li>Developed automation systems using Apps Script reducing manual effort by 90%</li>
+      <li>Created forecasting ML model using Prophet + FastAPI</li>
+      <li>Implemented RAG-based sentiment analysis system using Vector DB + Hugging Face</li>
+      <li>Developed secure backend for e-commerce using Spring Boot & ReactJS</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <ul>
+      <li><b>Bachelor of Engineering (CSE)</b> – Osmania University, 2023</li>
+      <li>Schooling – IISD, Saudi Arabia</li>
+    </ul>
+  </div>
+
+  <footer>
+    © 2025 Mirza Mohammed Baig | Developer Portfolio
+  </footer>
+</body>
+</html>
